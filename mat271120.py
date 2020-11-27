@@ -39,13 +39,10 @@ def pnt_optimize_par_solution(s, i, j):
         pnt_optimize_par_solution(s, s[i][j], j)
         print(')',end = ' ')
 
-# Read Matrices from txt file
-with open('xmat.txt', 'r') as fx:
-    x = [[int(num) for num in line.split(',')] for line in fx]
-with open('ymat.txt', 'r') as fy:
-    y = [[int(num) for num in line.split(',')] for line in fy]
-with open('zmat.txt', 'r') as fz:
-    z = [[int(num) for num in line.split(',')] for line in fz]
+# Matrices for calculation
+x =  [[11, 3], [7, 11]]
+y =  [[8, 0, 1], [0, 3, 5]]
+z =  [[1], [3], [2]]
 
 # Generate array from matrices 
 arr = [len(x),len(x[0]),len(y[0]),len(z[0])]
